@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "/style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+  <title>To-Do List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Create a new todo...</h1>
+    <div class="form">
+       <form action="" method="post" class="form-action" id="my_form" name="my">
+        <p>
+          <input type="number" id="fileNumber" class="text-input" name="fileNumber" min="1" max="3" required>       
+          <label for="fileNumber" class="input-label">Number of event:</label>
+         </p>
+          <p>
+             <input type="text" class="text-input " name="name" id="name" required>
+             <label for="name" class="input-label">Event:</label>
+          </p>
+          <p>
+             <input type="date" class="text-input" name="date" id="date" required>
+             <label for="date" class="input-label">Date:</label>
+          </p>
+          <p>
+             <input type="time" class="text-input" id="time" name="time" required>
+             <label for="time" class="input-label">Time:</label>
+          </p>
+          <p>
+             <input type="text" class="text-input" name="notes" id="notes" required>
+             <label for="notes" class="input-label">Note:</label>
+          </p>
+          <p>
+             <input type="text" class="text-input" name="importanceLevel" id="importanceLevel" required>
+             <label for="importanceLevel" class="input-label">Importanse:</label>
+          </p> 
+           <div class="send">
+          <button class="button">Send</button>
+          </div>
+       </form> 
+    </div>
+  </div>
+<div id="root">
+    <h1>To-Do LIST</h1>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>

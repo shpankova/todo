@@ -1,0 +1,162 @@
+body{
+    max-height:95%;
+    font-family: Bad Script;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    margin: 10px;
+
+}
+
+h1{
+    text-transform: uppercase;
+    background: #301c0a;
+    color:white;
+    text-align: center;
+    height: 70px;
+    margin: 0;
+    padding:10px 28px;
+    font-weight: normal;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+input{
+    background: rgba(87, 67, 53, 0.541);
+    width: 100%;
+    box-sizing: border-box;
+    height:50px ;
+    font-size: 30px;
+    font-weight: 0.5px;
+    padding-left:25px;
+    border: 3px solid rgb(61, 37, 14);
+    color: rgb(8, 7, 5);
+}
+
+#root{
+    margin: 20px 10px 20px 200px;
+    width: 580px;
+    box-shadow: 0 0 1em black;
+    background:rgba(163, 149, 130, 0.637);
+    position:relative;
+
+}
+
+
+/* Стили для формы */
+
+.container{
+    box-shadow: 0 0 1em black;
+    background:rgba(163, 149, 130, 0.637);
+    margin: 20px 20px 20px 240px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.button {
+    padding: 20px 70px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 5px;
+    border: 5px solid #0f0903;
+    border-radius: 50px;
+    background-color: #301c0a;
+    font-family: Bad Script;
+    color: white;
+    cursor: pointer;
+ 
+ }
+ 
+ .button:focus {
+    color: #301c0a;
+    border-color: #301c0a;
+    background-color: white;
+ 
+ }
+  
+ .send {
+    text-align: center;
+ }
+ 
+ .form {
+    padding-top: 45px;
+    margin-left: 20px;
+    font-weight: bolder;
+    color: rgb(73, 41, 19);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+ }
+
+ 
+ .form-action p {
+    position: relative;
+    margin: 0;
+    margin-bottom: 40px;
+ }
+ 
+ .text-input {
+    font-family: Bad Script;
+    font-size: 30px;
+    display: block;
+    margin-left: 20px;
+    margin-right: 30px;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid rgb(73, 41, 19);
+    background-color: transparent;
+    color: rgb(73, 41, 19);
+ }
+ 
+ .text-input:focus + .input-label,
+ .text-input:valid:not(:placeholder-shown) + .input-label {
+    bottom: 55px;
+    transition: 0.2s ease-in;
+ }
+ 
+ .input-label {
+     font-size: 20px;
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    transition: 0.2s ease-in;
+ }
+
+
+/* EVENT */
+
+
+.card {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    box-shadow: 0 0 1em black;  
+  background-color: #eee6df;
+  border: 2px solid #7e7873;
+  margin: 10px 60px;   
+  padding: 0;
+}
+
+.status {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+background-color: rgba(163, 149, 130, 0.63);
+margin: 10px 60px;   
+padding: 0;
+}
+
+
+.card-title {
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 700;
+
+}
+
+
+.card-time {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
